@@ -1,18 +1,20 @@
-# Salesforce DX Project: Next Steps
+# Deploy the Above app to your salesforce environment
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+<a href="https://githubsfdeploy.herokuapp.com?owner=financialforcedev&amp;repo=apex-mdapi">
+  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
+</a>
 
-## How Do You Plan to Deploy Your Changes?
+# Steps to be followed in salesforce org
+1) Create a public site in Salesforce 
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+   Go to Setup > Sites > Click on New button on the Sites Panel
+   <img width="1607" alt="image" src="https://user-images.githubusercontent.com/64912535/209779026-051d0656-4c89-41d5-8025-bdebf7a6c1d7.png">
 
-## Configure Your Salesforce DX Project
+3) Copy the url of the public site 
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-## Read All About It
+# Steps to follow in github
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1) Create a new github repository
+2) Go to the Setting tabs
+3) Got to the Webhook tab and add a new webhook
