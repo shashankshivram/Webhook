@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  
+<types>
+<members>Git_Hub_Details__c.All</members>
+  <name>ListView</name>
+  </types>
+  <types>
+    <members>Webhook</members>
+    <name>CustomApplication</name>
+  </types>
+  <types>
+    <members>Git_Hub_Details__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Webhook_Admin</members>
+    <name>PermissionSet</name>
+    </types>
+  <types>
+    <members>Git_Hub_Detail_Record_Page</members>
+    <members>Webhook_UtilityBar</members>
+    <name>FlexiPage</name>
+  </types>
+  <types>
+  <members>Git_Hub_Details__c-Git Hub Detail Layout</members>
+  <name>Layout</name>
+  </types>
+   <version>54.0</version>
+</Package>
