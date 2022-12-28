@@ -12,6 +12,7 @@ RestRequest request = RestContext.request;
 RestResponse response = RestContext.response;
 try{
 
+    
 
 String hashedval = request.headers.get('X-Hub-Signature-256');
 Blob requestBody  = request.requestBody;
@@ -34,7 +35,9 @@ if(parser.getText() == 'full_name'){
 parser.nextToken();
 repo = parser.getText();
 }
-Git_Hub_Details__c githubDetails = new Git_Hub_Details__c();
+
+}
+    Git_Hub_Details__c githubDetails = new Git_Hub_Details__c();
 githubDetails.Added_Component__c  = headcommit!=null && headcommit.added!=null?  String.join(headcommit.added,','):'';
 githubDetails.Commit_Message__c = headcommit!=null?headcommit.message:'';
 githubDetails.Commit_Time_Stamp__c =  headcommit!=null?headcommit.timestamp:'';
@@ -47,7 +50,6 @@ githubDetails.Repository_Name__c = repo;
 insert githubDetails;
 response.statusCode = 200;
 response.responseBody = Blob.valueOf(JSON.serialize((new Response('Success','Record created Successfully'))));
-}
 }  catch(Exception e){
     System.debug('Exception e ===>'+e);
     response.statusCode = 404;
