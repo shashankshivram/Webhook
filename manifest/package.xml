@@ -26,5 +26,10 @@
   <members>Git_Hub_Details__c-Git Hub Detail Layout</members>
   <name>Layout</name>
   </types>
+   <types>
+        <members>Git_Hub_Details__c</members>
+        <name>CustomTab</name>
+    </types>
+   
    <version>54.0</version>
 </Package>
